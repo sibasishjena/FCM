@@ -17,7 +17,7 @@ tol = 1e-3;
 [nr nc] = size(X);
 for i = 1:nc
    for j = 1:nr
-     data(j, i) = (X(j, i)-std(X(:, i)))/mean(X(:, i));
+     data(j, i) = (X(j, i)-mean(X(:, i)))/std(X(:, i));
    end
 end
 
